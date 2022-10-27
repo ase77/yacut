@@ -12,8 +12,8 @@ sys.path.append(str(BASE_DIR))
 
 
 try:
-    from yacut_app import app, db
-    from yacut_app.models import URL_map
+    from yacut import app, db
+    from yacut.models import URL_map
 except NameError:
     raise AssertionError(
         'Не обнаружен объект приложения. Создайте экземпляр класса Flask и назовите его app.',
