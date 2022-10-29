@@ -3,6 +3,7 @@ from wtforms import StringField, SubmitField, URLField
 from wtforms.validators import (URL, DataRequired, Length, Optional, Regexp,
                                 ValidationError)
 
+from .constants import REGULAR_EXPRESSION
 from .models import URL_map
 
 
@@ -17,7 +18,7 @@ class URL_Form(FlaskForm):
         'Введите короткий идентификатор',
         validators=[Optional(),
                     Length(1, 16),
-                    Regexp('^[a-zA-Z0-9_]*$', message='Только буквы и цифры')]
+                    Regexp(REGULAR_EXPRESSION, message='Только буквы и цифры')]
     )
     submit = SubmitField('Создать')
 
