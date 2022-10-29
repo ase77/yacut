@@ -55,4 +55,8 @@ flask db upgrade
 flask run
 ```
 
+#### Автор проекта:
+
+Моторин А.В.
+
 [__В начало__](#anchor) :point_up:
