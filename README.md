@@ -20,19 +20,17 @@ cd yacut
 
 Cоздать и активировать виртуальное окружение:
 
-```
-python -m venv venv
-```
-
 * Если у вас Linux/MacOS
 
     ```
+    python3 -m venv venv
     source venv/bin/activate
     ```
 
 * Если у вас windows
 
     ```
+    python -m venv venv
     source venv/Scripts/activate
     ```
 
